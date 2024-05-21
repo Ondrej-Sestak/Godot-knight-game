@@ -546,3 +546,6 @@ position = Vector2(992, 27)
 
 [node name="Slime" parent="." instance=ExtResource("6_mve5w")]
 position = Vector2(169, -75)
+
+[node name="Slime2" parent="." instance=ExtResource("6_mve5w")]
+position = Vector2(-102, 4)
