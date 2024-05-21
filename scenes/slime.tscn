@@ -51,9 +51,16 @@ sprite_frames = SubResource("SpriteFrames_4gpd6")
 autoplay = "default"
 frame = 2
 frame_progress = 0.0770326
+flip_h = true
 
 [node name="Killzone" parent="." instance=ExtResource("2_ggrmk")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(0, 4.5)
 shape = SubResource("RectangleShape2D_umar4")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+target_position = Vector2(10, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-9, 0)
