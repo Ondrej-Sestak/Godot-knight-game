@@ -1,6 +1,7 @@
 extends Node2D
 
-const SPEED = 60
+
+@export var speed = 60
 
 var direction = 1
 
@@ -17,4 +18,4 @@ func _process(delta):
 		direction = 1
 		animated_sprite.flip_h = false
 		
-	position.x += direction * SPEED * delta
+	position.x += direction * speed * delta
